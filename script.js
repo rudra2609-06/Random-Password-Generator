@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   copyBtn.addEventListener("click", () => {
     if (passwordField.value.trim() === "") {
       alert("No Password Generated");
+	  return;
     }
     navigator.clipboard.writeText(passwordField.value);
     /* NOTE:
