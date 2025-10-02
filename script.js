@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   copyBtn.addEventListener("click", () => {
-    if (passwordField.value.trim() === 0) {
+    if (passwordField.value.trim() === "") {
       alert("No Password Generated");
     }
     navigator.clipboard.writeText(passwordField.value);
